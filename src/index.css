@@ -119,5 +119,31 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    /* Mobile viewport handling */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  /* Mobile-specific styles */
+  .mobile-friendly {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Enhanced mobile touch targets */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Mobile viewport handling */
+  @media (max-width: 768px) {
+    .mobile-padding {
+      padding: 1rem;
+    }
+    
+    .mobile-text {
+      font-size: 16px; /* Prevents zoom on iOS */
+    }
   }
 }

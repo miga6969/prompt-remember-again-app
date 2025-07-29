@@ -48,8 +48,8 @@ export function AppSidebar() {
   return (
     <Sidebar
       collapsible="icon"
+      className="border-r bg-background"
     >
-      <SidebarTrigger className="m-2 self-end" />
 
       <SidebarContent>
         <SidebarGroup>

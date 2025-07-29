@@ -21,13 +21,13 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <SidebarProvider>
+        <SidebarProvider defaultOpen={true}>
           <div className="min-h-screen flex w-full">
             <AppSidebar />
             <div className="flex-1 flex flex-col">
-              <header className="h-16 border-b flex items-center px-4">
+              <header className="h-16 border-b flex items-center px-4 bg-background">
                 <SidebarTrigger />
-                <h1 className="ml-4 font-semibold">Emergency Aid Pro</h1>
+                <h1 className="ml-4 font-semibold text-foreground">Emergency Aid Pro</h1>
               </header>
               <main className="flex-1 p-6">
                 <Routes>
